@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment Form</title>
+  </head>
+
+  <body>
+    <h1>Meet me in person!</h1>
+    <p>
+      Hey! You can meet me directly through this form! Just fill in the details
+      needed and submit!
+    </p>
+    <br />
+    <form
+      action="mailto:eshan.kharya@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label>Full Name: </label>
+      <input type="text" name="Full Name" value="" />
+      <br />
+      <br />
+      <label>Email: </label>
+      <input type="email" name="Email ID" />
+      <br />
+      <br />
+      <label>Appointment Date: </label>
+      <input type="date" name="Date" value="Enter Name" />
+      <br />
+      <br />
+      <label>Aproximate Duration: (10-90 minutes)</label>
+      <input
+        type="range"
+        name="minutes"
+        min="10"
+        max="90"
+        step="10"
+        list="markers"
+        style="width: 200px"
+      />
+      <datalist id="markers">
+        <option value="10"></option>
+        <option value="20"></option>
+        <option value="30"></option>
+        <option value="40"></option>
+        <option value="50"></option>
+        <option value="60"></option>
+        <option value="70"></option>
+        <option value="80"></option>
+        <option value="90"></option>
+      </datalist>
+      <br />
+      <br />
+      <label>Appointment Time: </label>
+      <input type="radio" id="_5" value="5:00 p.m." name="time" />
+      <label for="_5">5:00 p.m.</label>
+      <input type="radio" id="_530" value="5:30 p.m." name="time" />
+      <label for="_530">5:30 p.m.</label>
+      <input type="radio" id="_6" value="6:00 p.m." name="time" />
+      <label for="_6">6:00 p.m.</label>
+      <input type="radio" id="_630" value="6:30 p.m." name="time" />
+      <label for="_630">6:30 p.m.</label>
+      <input type="radio" id="_7" value="7:00 p.m." name="time" />
+      <label for="_7">7:00 p.m.</label>
+      <br />
+      <br />
+      <label>An abstract of the reason for visit: </label>
+      <br />
+      <textarea name="message" rows="5" cols="75"></textarea>
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
